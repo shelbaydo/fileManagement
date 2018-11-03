@@ -23,6 +23,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-   this is the index.jsp
-  </body>
+   ${currentUser.username} 欢迎登录
+   <a href="<%=path %>/MyPage.jsp">我的主页</a>
+   
+   </body>
 </html>

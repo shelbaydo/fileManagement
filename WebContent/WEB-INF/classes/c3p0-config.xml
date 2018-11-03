@@ -13,10 +13,10 @@
 		<!-- 连接数每次增加的数量 -->
         <property name="acquireIncrement">3</property>
        	<!-- 默认连接数 -->
-        <property name="initialPoolSize">5</property>
+        <property name="initialPoolSize">10</property>
         <!-- 最小连接数 -->
-        <property name="minPoolSize">2</property>
+        <property name="minPoolSize">1</property>
        	<!-- 最大连接数 -->
-        <property name="maxPoolSize">10</property>
+        <property name="maxPoolSize">15</property>
     </default-config>
 </c3p0-config>

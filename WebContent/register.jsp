@@ -11,37 +11,44 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <script type="text/javascript" src="<%=path%>/js/json2.js"></script>
  <script>
  $(function(){
-    
-    $("#codeBtn").bind("click",function(){
- 		
+    $("#codeBtn").bind("click",function(){	
  		var phone = $("input[name='phone']").val();
- 		var param = {"phone":phone}
+ 		var param = {"phone":phone,"type":"askingcode"}
  			$.ajax(
  			{	
  				url:getBasePath()+"/SMS",
  				async:true,
  				cache:false,
  				type:"post",
- 				//dataType:"json",
  				contentType: "application/json; charset=utf-8",
  				data:JSON.stringify(param),
  				success:function(msg){
- 					alert('return successful');
- 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象				
- 					alert('json.parse is not working');
- 					if(message.msg=="fail"){
- 						alert("验证码发送失败");
- 						return;
- 					}
+ 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象
+ 					alert('验证码为：'+message.code);										     
  				},
  				error:function(response,status){	
 					console.log(status);					
- 				}
- 				
- 			})
+ 				}				
+ 			})	
+ 		})	
+ 	$("#phoneid").blur(function(){
  		
- 		})
- 	
+ 		var phone = $(this).val();
+ 		var param = {"phone":phone,"type":"verifyingphone"};
+ 		$.ajax(
+ 			{	
+ 				url:getBasePath()+"/SMS",
+ 				async:true,
+ 				cache:false,
+ 				type:"post",
+ 				contentType: "application/json; charset=utf-8",
+ 				data:JSON.stringify(param),
+ 				success:function(msg){
+ 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象
+ 					$("#noteLabel").html(message.msg);			
+ 				}				
+ 			})	
+ 	})
 })
 function getBasePath(){
 	    return '<%=basePath%>';
@@ -63,14 +70,16 @@ function getBasePath(){
   
   <body> 
     欢迎来到注册页面 
-    <form action="<%=path %>/DistributionCenter">
+    <form action="<%=path %>/DistributionCenter" method="post">
     	<input type="hidden" name="type" value="register">
     	用户名：<input type="text" name="username" /><br/>
-    	手机号：<input type="text" name="phone"/>
+    	手机号：<input type="text" name="phone" id="phoneid"/>
+    	<label  id="noteLabel"></label><br/>
+    	密码：<input type = "text" name="password"/><br/>
     	<input type="button" value="发送验证码" id="codeBtn" /><br/>
-    	 验证码：<input type="text" name="verifyCode"/><br/>
-    	 
+    	 验证码：<input type="text" name="verifyCode"/><br/>  	 
     	 <input type="submit" value="注册" > 
+    	 ${RegisterResult}
     </form>
   </body>
 </html>
