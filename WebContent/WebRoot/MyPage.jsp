@@ -23,15 +23,45 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 <script>
 	$(function(){
-		
+		var param = {"type":"findAllCourse"};
+		$.ajax(
+ 			{	
+ 				url:getBasePath()+"/CourseServlet",
+ 				async:true,
+ 				cache:false,
+ 				type:"post",
+ 				contentType: "application/json; charset=utf-8",
+ 				data:JSON.stringify(param),
+ 				success:function(msg){
+ 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象		
+ 				    for (var i=0;i<message.courseNum;i++)
+					{
+						$("p").append("<div class='courseDiv'>"+message.courseList[i]+"</div>"+"<br/>");
+						
+					}	
+					$("div").css("color","red").css("cursor","pointer");
+					
+ 					$(".courseDiv").bind("click",function(){
+ 							
+ 					});   
+ 				},
+ 				error:function(response,status){		
+					console.log(status);					
+ 				}				
+ 			})	
+ 		
 	})
-		
-	</script>
+	function getBasePath(){
+	    return '<%=basePath%>';
+    }
+</script>
   </head>
   
   <body>
    ${currentUser.username}
    <a href="<%= path%>/alterInformation.jsp">修改资料</a>
    <a href="<%=path %>/addCourse.jsp">添加课程</a> 
+   <p>
+   </p>
   </body>
 </html>

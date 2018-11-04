@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class Note {
+	private int NoteId;
+	public int getNoteId() {
+		return NoteId;
+	}
+	public void setNoteId(int noteId) {
+		NoteId = noteId;
+	}
 	private String title;
 	private String content;
 	private Date createTime;

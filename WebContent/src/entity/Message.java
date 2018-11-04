@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class Message {
+	private int messageId;
+	public int getMessageId() {
+		return messageId;
+	}
+	public void setMessageId(int messageId) {
+		this.messageId = messageId;
+	}
 	private int senderId;
 	private int targetId;
 	private String content;

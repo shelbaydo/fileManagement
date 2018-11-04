@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class Notification {
+	private int notificationId;
+	public int getNotificationId() {
+		return notificationId;
+	}
+	public void setNotificationId(int notificationId) {
+		this.notificationId = notificationId;
+	}
 	private String content;
 	private String title;
 	private int targetId;

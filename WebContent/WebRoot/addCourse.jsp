@@ -23,28 +23,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 	<script>
 	$(function(){
-		alert('dd');
-		alert('44');
+		
 		$("#addCourse").bind("click",function(){
-			alert('tt');
-	 		var courseName = $("#cN").val();
-	 		var param = {"courseName":courseName};
-	 		$.ajax({			
-						alert('dd');
-						url:getBasePath()+"/CourseServlet",
-						async:true,
-						cache:false,
-						type:"post",
-						contentType: "application/json; charset=utf-8",
-						data:JSON.stringify(param),
-						success:function(msg)
-						{
-							var message = $.parseJSON(msg);//将json类型字符串转换为json对象
-							alert(message.msg);			
-	 					}				
-	 			})	
- 			})
-		})	
+			
+ 		var courseName = $("#cN").val();
+ 		var param = {"courseName":courseName,"type":"addCourse"};
+ 			$.ajax(
+ 			{	
+ 				url:getBasePath()+"/CourseServlet",
+ 				async:true,
+ 				cache:false,
+ 				type:"post",
+ 				contentType: "application/json; charset=utf-8",
+ 				data:JSON.stringify(param),
+ 				success:function(msg){
+ 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象
+ 					alert(message.msg);										     
+ 				},
+ 				error:function(response,status){	
+					console.log(status);					
+ 				}				
+ 			})	
+ 		})	
+	})	
+		function getBasePath(){
+	    return '<%=basePath%>';
+    }
 	</script>
   </head>
   

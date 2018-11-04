@@ -52,7 +52,7 @@ public class UserDao implements Dao {
 	}
 
 	public Object findObjectById(int id) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -65,6 +65,11 @@ public class UserDao implements Dao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	/**
+	 * 根据电话号码查找用户对象
+	 * @param phone
+	 * @return 返回用户对象
+	 */
 	public List<User> findObjectByPhone(String phone) {
 		List<User> userList = null;
 		String sql = "select * from user where phone = ?";
@@ -76,57 +81,5 @@ public class UserDao implements Dao {
 		}
 		return userList;
 	}
-/**
- * 根据电话号码查找用户编号
- * @param phone
- * @return 用户编号
- *//*
-	public int findUserIdByPhone(String phone) {
-		int userId = 0;
-		try {
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		Connection conn = null;
-		try {
-			conn = DriverManager.getConnection("jdbc:odbc:filemanager");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String sql = "select userId from user where phone= ?";
-		Statement statement = null;
-		try {
-			statement = conn.createStatement();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ResultSet result = null;
-		try {
-			result = statement.executeQuery(sql);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ResultSetMetaData rd = null;
-		try {
-			rd = (ResultSetMetaData) result.getMetaData();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			while(result.next()) //这是一行一行递进
-			for(int i=1;i<=rd.getColumnCount();++i){ //这是一列一列递进 每次输出一行
-			userId = result.getInt("i");
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return userId;
-	}*/
+
 }

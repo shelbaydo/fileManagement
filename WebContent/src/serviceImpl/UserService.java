@@ -50,18 +50,15 @@ public class UserService implements OperationService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	/**
+	 * 通过电话号码查找用户
+	 * @param phone
+	 * @return 返回当前登录用户对象
+	 */
 	public User findUserByPhone(String phone) {
 		List<User> list = (List<User>)userDao.findObjectByPhone(phone);	
 		return list.get(0);
 	}
-	/**
-	 * 根据电话号码查找用户编号
-	 * @param phone
-	 * @return 返回用户编号
-	 */
-	public int findUserIdByPhone(String phone) {
-		return 0;
-		//return userDao.findUserIdByPhone(phone);
-	}
+	
 
 }

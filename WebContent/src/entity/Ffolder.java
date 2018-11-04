@@ -1,6 +1,13 @@
 package entity;
 
 public class Ffolder {
+	private int ffolderId;
+	public int getFfolderId() {
+		return ffolderId;
+	}
+	public void setFfolderId(int ffolderId) {
+		this.ffolderId = ffolderId;
+	}
 	private String name;
 	private int courseId;
 	private int favoriteNum;

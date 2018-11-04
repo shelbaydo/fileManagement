@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class Course {
+	private int courseId;
+	public int getCourseId() {
+		return courseId;
+	}
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
+	}
 	private int userId;
 	private int noteNum;
 	private int ffolderNum;

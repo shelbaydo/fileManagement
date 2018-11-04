@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
  
 public class Event {
+	private int EventId;
+	public int getEventId() {
+		return EventId;
+	}
+	public void setEventId(int eventId) {
+		EventId = eventId;
+	}
 	private int userId;
 	private String name;
 	private Date createTime;

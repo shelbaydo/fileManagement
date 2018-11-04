@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class CommentReply {
+	private int commentReplyId;
+	public int getCommentReplyId() {
+		return commentReplyId;
+	}
+	public void setCommentReplyId(int commentReplyId) {
+		this.commentReplyId = commentReplyId;
+	}
 	private String content;
 	private int noteId;
 	private int commentId;

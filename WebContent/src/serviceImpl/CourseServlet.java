@@ -2,13 +2,16 @@ package serviceImpl;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import services.OperationService;
 import utils.JsonParse;
@@ -46,22 +49,35 @@ public class CourseServlet extends HttpServlet implements OperationService {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		 Map<String,String> returnJson = new HashMap();
+		 JSONObject o = JSONObject.fromObject(returnJson); 
+		 User currentUser = (User)request.getSession().getAttribute("currentUser");
 		 response.setCharacterEncoding("utf-8");
 		 response.setContentType("text/plain;charset=utf-8");
 		 JSONObject parameters = JsonParse.getParameters(request);
-		 String courseName = (String)parameters.get("courseName");
-		 User currentUser = (User)request.getSession().getAttribute("currentUser");
-		 UserService userService = new UserService();
-		 int userId = userService.findUserIdByPhone(currentUser.getPhone());
-		 Course course = new Course();
-		 course.setUserId(userId);
-		 course.setName(courseName);
-		 CourseDao courseDao = new CourseDao();
-		 if(courseDao.addObject(course)){
-			 returnJson.put("msg", "添加成功");
+		 if(parameters.get("type").equals("findAllCourse")){
+			 CourseDao courseDao = new CourseDao();
+			 JSONArray jsonArray = new JSONArray();		
+			 List<Course> courseList = (List<Course>)courseDao.findObjectById(currentUser.getUserId());
+			 HttpSession session = request.getSession(true);
+			
+			 for(int i = 0;i<courseList.size();i++){
+				 jsonArray.add(courseList.get(i).getName());
+				 session.setAttribute(courseList.get(i).getName(), courseList.get(i));
+			 }
+			 o.put("courseNum", courseList.size());
+			 o.put("courseList", jsonArray);
+		 }else{			 
+			 String courseName = (String)parameters.get("courseName");		
+			 UserService userService = new UserService();
+			 Course course = new Course();
+			 course.setUserId(currentUser.getUserId());
+			 course.setName(courseName);
+			 CourseDao courseDao = new CourseDao();
+			 if(courseDao.addObject(course)){
+				 o.put("msg", "添加成功");
+			 }
 		 }
-		 JSONObject o = JSONObject.fromObject(returnJson); 
-		 response.getWriter().print(o.toString());		
+		 response.getWriter().print(o.toString());	
 	}
 
 }

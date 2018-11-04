@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class Answer {
+	private int answerId;
+	public int getAnswerId() {
+		return answerId;
+	}
+	public void setAnswerId(int answerId) {
+		this.answerId = answerId;
+	}
 	public int getAnswerManId() {
 		return answerManId;
 	}

@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class File {
+	private int FileId;
+	public int getFileId() {
+		return FileId;
+	}
+	public void setFileId(int fileId) {
+		FileId = fileId;
+	}
 	private String fileName;
 	private boolean isDownloadable;
 	private Date uploadTime;

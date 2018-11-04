@@ -17,6 +17,7 @@
         <!-- 最小连接数 -->
         <property name="minPoolSize">1</property>
        	<!-- 最大连接数 -->
-        <property name="maxPoolSize">15</property>
+        <property name="maxPoolSize">50</property>
+        <property name="autoCommitOnClose" value="true"></property>  
     </default-config>
 </c3p0-config>

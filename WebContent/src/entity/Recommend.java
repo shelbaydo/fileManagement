@@ -1,7 +1,13 @@
 package entity;
 
 public class Recommend {
-
+	private int recommendId;
+	public int getRecommendId() {
+		return recommendId;
+	}
+	public void setRecommendId(int recommendId) {
+		this.recommendId = recommendId;
+	}
 	private String address;
 	private String keyword;
 	private String digestFrom;

@@ -1,6 +1,13 @@
 package entity;
 
 public class QuestionTag {
+	private int QuestionTagId;
+	public int getQuestionTagId() {
+		return QuestionTagId;
+	}
+	public void setQuestionTagId(int questionTagId) {
+		QuestionTagId = questionTagId;
+	}
 	private String name;
 	private int refNum;
 	public String getName() {

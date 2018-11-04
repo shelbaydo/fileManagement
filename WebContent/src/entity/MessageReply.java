@@ -3,6 +3,13 @@ package entity;
 import java.util.Date;
 
 public class MessageReply {
+	private int MessageReplyId;
+	public int getMessageReplyId() {
+		return MessageReplyId;
+	}
+	public void setMessageReplyId(int messageReplyId) {
+		MessageReplyId = messageReplyId;
+	}
 	private int messageId;
 	private String content;
 	private Date replyTime;
