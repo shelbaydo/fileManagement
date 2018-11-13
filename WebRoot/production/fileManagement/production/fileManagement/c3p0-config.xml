@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <default-config>
+    	<!-- 数据库服务器路径 -->
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/filemanager</property>
+        <!-- 数据库驱动类 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <!-- 数据库账号 -->
+        <property name="user">root</property>
+        <!-- 数据库密码 -->
+        <property name="password">123456</property>
+
+		<!-- 连接数每次增加的数量 -->
+        <property name="acquireIncrement">3</property>
+       	<!-- 默认连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">1</property>
+       	<!-- 最大连接数 -->
+        <property name="maxPoolSize">50</property>
+        <property name="autoCommitOnClose" value="true"></property>  
+    </default-config>
+</c3p0-config>
