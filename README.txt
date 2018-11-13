@@ -1,1 +1,0 @@
-About the lowest price of the web page project
