@@ -17,7 +17,7 @@ public class DistributionCenter extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		//response.setContentType("text/html;charset=UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
 		String type = request.getParameter("type");
 		if(type!=null){
 			if(type.equals("login")){

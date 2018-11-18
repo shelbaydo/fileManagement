@@ -36,16 +36,17 @@ public class RegisterServlet extends HttpServlet {
 			 if(userService.add(user)){
 				 request.setAttribute("RegisterResult", "注册成功,3s后跳转到首页");
 				 response.setHeader("refresh", "3;url='/fileManagement/index.jsp'");
-				 request.getRequestDispatcher("/register.jsp").forward(request, response);
+				 request.getRequestDispatcher("/home/register.jsp").forward(request, response);
 				 
 			 }else{
 				 response.setHeader("refresh", "3;url='/fileManagement/index.jsp'");
 				 request.setAttribute("RegisterResult", "对不起注册失败，我们正在努力查找问题");
-				 request.getRequestDispatcher("/register.jsp").forward(request, response);				
+				 request.getRequestDispatcher("/home/register.jsp").forward(request, response);				
 			 }
 		 }else{
 			 request.setAttribute("RegisterResult", "验证码输入错误");
-			 request.getRequestDispatcher("/register.jsp").forward(request, response);
+			 
+			 request.getRequestDispatcher("/home/register.jsp").forward(request, response);
 		 }
 		 
 	}

@@ -28,5 +28,4 @@ public class ControlForAjax extends HttpServlet {
 			session.removeAttribute("currentUser");	
 		}
 	}
-
 }

@@ -51,22 +51,36 @@ public class CourseServlet extends HttpServlet implements OperationService {
 		 HttpSession session = request.getSession(true);	
 		 Map<String,String> returnJson = new HashMap();
 		 JSONObject o = JSONObject.fromObject(returnJson); 
-		 User currentUser = (User)session.getAttribute("currentUser"); 
-		
+		 User currentUser = (User)session.getAttribute("currentUser"); 		
 		 JSONObject parameters = JsonParse.getParameters(request);
 		 if(parameters.get("type").equals("findAllCourse")){
 			 CourseDao courseDao = new CourseDao();
 			 JSONArray jsonArray = new JSONArray();		
 			 List<Course> courseList = (List<Course>)courseDao.findObjectById(currentUser.getUserId());
-			 System.out.println(courseList.size());
 			 for(int i = 0;i<courseList.size();i++){
-				 jsonArray.add(courseList.get(i).getName());
+				 jsonArray.add(courseList.get(i).getName());		 
 				 session.setAttribute(courseList.get(i).getName(), courseList.get(i));
-				 Course course = (Course)session.getAttribute(courseList.get(i).getName());
-				 System.out.println(course);
+				 Course course = (Course)session.getAttribute(courseList.get(i).getName());		 
 			 }
 			 o.put("courseNum", courseList.size());
 			 o.put("courseList", jsonArray);
+		 }else if(parameters.get("type").equals("find2LatestCourse")){
+			 CourseDao courseDao = new CourseDao();
+			 JSONArray jsonArray = new JSONArray();	
+			 JSONArray noteNumList = new JSONArray();
+			 JSONArray folderNumList = new JSONArray();
+			 List<Course> courseList = (List<Course>)courseDao.find2LatestCourse(currentUser.getUserId());
+			 for(int i = 0;i<courseList.size();i++){
+				 jsonArray.add(courseList.get(i).getName());
+				 noteNumList.add(courseList.get(i).getNoteNum());
+				 folderNumList.add(courseList.get(i).getFolderNum());
+				 session.setAttribute(courseList.get(i).getName(), courseList.get(i));
+				 Course course = (Course)session.getAttribute(courseList.get(i).getName());		 
+			 }
+			 o.put("courseNum", courseList.size());
+			 o.put("courseList", jsonArray);
+			 o.put("courseList", noteNumList);
+			 o.put("courseList", folderNumList);
 		 }else if(parameters.get("type").equals("addCourse")){			 
 			 String courseName = (String)parameters.get("courseName");		
 			 UserService userService = new UserService();

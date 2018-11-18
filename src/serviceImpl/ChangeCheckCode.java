@@ -25,7 +25,7 @@ public class ChangeCheckCode extends HttpServlet {
 		String password = request.getParameter("password");
 		request.setAttribute("phone", phone);
 		request.setAttribute("password", password);
-		request.getRequestDispatcher("/fileManagement/login.jsp").forward(request, response);	
+		request.getRequestDispatcher("/home/login.jsp").forward(request, response);	
 	}
 
 	

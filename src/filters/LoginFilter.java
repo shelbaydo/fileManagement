@@ -25,7 +25,7 @@ public class LoginFilter implements Filter {
 		  HttpServletResponse resp = (HttpServletResponse)response;
 		  HttpSession session = requ.getSession(true);
 		  if (session.getAttribute("currentUser") == null) {
-			resp.sendRedirect("/fileManagement/index.jsp");
+			resp.sendRedirect("/fileManagement/index2.jsp");
 		  }else {
 			filterchain.doFilter(request,response);
 		  }

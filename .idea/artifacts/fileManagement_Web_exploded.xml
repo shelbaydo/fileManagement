@@ -1,34 +1,31 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="fileManagement:Web exploded">
-    <output-path>E:/tomcat9/apache-tomcat-9.0.12-windows-x64/apache-tomcat-9.0.12/webapps￥studentFileManagement</output-path>
+    <output-path>E:/tomcat9/apache-tomcat-9.0.12-windows-x64/apache-tomcat-9.0.12/webapps￥fileManagement</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="fileManagement/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="fileManagement" />
+          <element id="javaee-facet-classes" facet="fileManagement/web/Web" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="module" name="json-lib-2.4-jdk15.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="c3p0-0.9.5.2.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="mysql-connector-java-3.1.13-bin.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-fileupload-1.3.2.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-io-2.4.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="jstl.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-logging-4.0.6.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="cos.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="dom4j-core-1.4-dev-8.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="jaxen-1.1-beta-6.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="saxpath-1.0-FCS.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="standard.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-dbutils-1.7.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="mchange-commons-java-0.2.11.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-collections-3.1.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-lang-2.3.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="ezmorph-1.0.3.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="commons-beanutils-1.8.3.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="jsoup-1.11.3.jar" module-name="fileManagement" />
-          <element id="library" level="module" name="junit4" module-name="fileManagement" />
-          <element id="library" level="module" name="junit.jar" module-name="fileManagement" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/c3p0-0.9.5.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-beanutils-1.8.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-collections-3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-dbutils-1.7.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-fileupload-1.3.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-io-2.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-lang-2.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/commons-logging-4.0.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/cos.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/dom4j-core-1.4-dev-8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/ezmorph-1.0.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/jaxen-1.1-beta-6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mchange-commons-java-0.2.11.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/saxpath-1.0-FCS.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/standard.jar" />
         </element>
       </element>
     </root>

@@ -43,32 +43,33 @@ public class NoteServlet extends HttpServlet implements OperationService{
 			throws ServletException, IOException {
 
 		this.doPost(request, response);
-	}
-
-	
+	}	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setCharacterEncoding("utf-8");
-		response.setContentType("text/plain;charset=utf-8");
 		HttpSession session = request.getSession(true);
 		String type = request.getParameter("type");	
 		if(type.equals("Note")){
 			Note note = new Note();
 			note.setTitle(request.getParameter("title"));
+			
 			note.setContent(request.getParameter("content"));
+			
 			if(request.getParameter("isPublic").equals("yes")){
 				note.setPublic(true);
-			}else if(request.getParameter("isPublic").equals("yes")){
+			}else if(request.getParameter("isPublic").equals("no")){
 				note.setPublic(false);
 			}		
 			Course course = (Course)session.getAttribute(request.getParameter("courseName"));
+			
 			note.setCourseId(course.getCourseId());
 			if(noteDao.addObject(note)){
-				request.setAttribute("addNoteMessage", "添加成功");
-				request.getRequestDispatcher("/addNote.jsp").forward(request, response);
+				request.setAttribute("courseName", request.getParameter("courseName"));
+				request.setAttribute("message", "succeed");
+				request.getRequestDispatcher("/CourseUnit").forward(request, response);
 			}else{
-				request.setAttribute("addNoteMessage", "添加失败");
-				request.getRequestDispatcher("/addNote.jsp").forward(request, response);
+				request.setAttribute("message", "failed");
+				request.getRequestDispatcher("/CourseUnit").forward(request, response);
 			}
 		}	
 	}

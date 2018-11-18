@@ -54,26 +54,30 @@ public class LoginServlet extends HttpServlet {
 			String servercheckcode = (String) session.getAttribute("checkcode");
 			String message = null;
 			if (!servercheckcode.equalsIgnoreCase(usercheckcode)){
-				message = "验证码不正确，请重新输入";
+				message = "验证码错误";
 				request.setAttribute("message", message);
 				request.setAttribute("phone", phone);
 				request.setAttribute("password", password);
-				request.getRequestDispatcher("/login.jsp").forward(request, response);	
+				request.getRequestDispatcher("/home/login.jsp").forward(request, response);	
 			}else{
 				user = userService.findUserByPhone(phone);
 				if(password.equals(user.getPassword())){
 					session.setAttribute("currentUser", user);
-				    request.setAttribute("loginResult", "登录成功,3s后跳转到首页");
-					response.setHeader("refresh", "3;url='/fileManagement/index.jsp'");
-					request.getRequestDispatcher("/login.jsp").forward(request, response);
+				    request.setAttribute("loginResult", "登录成功");
+					response.setHeader("refresh", "1;url='/fileManagement/index.jsp'");
+					request.getRequestDispatcher("/home/login.jsp").forward(request, response);
 				}else{
 					request.setAttribute("loginResult", "密码错误");
-					request.getRequestDispatcher("/login.jsp").forward(request, response);
+					request.getRequestDispatcher("/home/login.jsp").forward(request, response);
 				}
 			}
 			
 		    
-		}	
+		}else if(type.equals("quitLogin")){
+			session.removeAttribute("currentUser");	
+			response.sendRedirect(request.getContextPath()+"/index.jsp");
+		}
+		
 	}
 
 }
