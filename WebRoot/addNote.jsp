@@ -19,7 +19,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+<script src="<%=path%>/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+ <script type="text/javascript" src="<%=path%>/js/json2.js"></script>
+ <script>
+	
+</script>
   </head>
   
   <body>
@@ -28,11 +32,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		
   		String courseName = request.getParameter("courseName");
   		
-  		
    %>
  
     <form action="<%=path %>/DistributionCenter" method="post">
      <input type="hidden" value="Note" name="type"/>
+     所属课程：<input type="text" value="<%=courseName %>" id="courseName"/>
     <input type="hidden" value="<%=courseName %>" name="courseName">
     笔记标题：<input type="text" name="title"/>
     笔记内容：<input type="text" name="content"/>
@@ -41,6 +45,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<label><input name="isPublic" type="radio" value="no" />否</label>
     <input type = "submit" value="提交"/>
     </form>
-    ${request.addNoteMessage}
+   
   </body>
 </html>

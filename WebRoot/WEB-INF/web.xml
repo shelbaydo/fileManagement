@@ -193,7 +193,31 @@
     <servlet-name>ControlForAjax</servlet-name>
     <servlet-class>controlers.ControlForAjax</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoteUnit</servlet-name>
+    <servlet-class>controlers.NoteUnit</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>AFolderServlet</servlet-name>
+    <servlet-class>serviceImpl.AFolderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FolderUnit</servlet-name>
+    <servlet-class>controlers.FolderUnit</servlet-class>
+  </servlet>
 
+
+ <servlet>
+    <servlet-name>UpLoad</servlet-name>
+    <servlet-class>serviceImpl.UpLoad</servlet-class>
+  </servlet>
+<servlet-mapping>
+     <servlet-name>UpLoad</servlet-name>
+    <url-pattern>/UpLoad</url-pattern>
+ </servlet-mapping>
   <servlet-mapping>
      <servlet-name>ChangeCheckCode</servlet-name>
     <url-pattern>/ChangeCheckCode</url-pattern>
@@ -201,6 +225,18 @@
   <servlet-mapping>
     <servlet-name>ControlForAjax</servlet-name>
     <url-pattern>/ControlForAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoteUnit</servlet-name>
+    <url-pattern>/NoteUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AFolderServlet</servlet-name>
+    <url-pattern>/AFolderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FolderUnit</servlet-name>
+    <url-pattern>/FolderUnit</url-pattern>
   </servlet-mapping>
  <filter>
 	<filter-name>showfilter</filter-name>
@@ -226,6 +262,7 @@
 		<filter-name>showfilter</filter-name>
 		<url-pattern>/MyPage.jsp</url-pattern>
 </filter-mapping>
+
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

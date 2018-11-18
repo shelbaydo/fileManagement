@@ -6,14 +6,451 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81b72c7a-5deb-4abe-8987-c70b3bdc12de" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="82998137-5e18-45c1-9102-c3db390572fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/fileManagement_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fileManagement_Web_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/MyPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/MyPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/ControlForAjax.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/ControlForAjax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/CourseUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/CourseUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/DistributionCenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/DistributionCenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/SMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controlers/SMS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/dao/Dao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/AnswerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/AnswerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CommentReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CommentReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/CourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/EventDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/EventDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FavoriteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FavoriteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FfolderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FfolderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FileDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FileDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FolderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FolderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FollowDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/FollowDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/MessageReplyDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/MessageReplyDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/NoteDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/NoteDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/NotificationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/NotificationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/QuestionTagDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/QuestionTagDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/RecommendDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/RecommendDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/ReferenceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/ReferenceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/daoImpl/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/CommentReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/CommentReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Ffolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Ffolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/File.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Folder.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Folder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/MessageReply.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/MessageReply.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Note.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Notification.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Notification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/QuestionTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/QuestionTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Recommend.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/Recommend.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/filters/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/filters/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ANoteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ANoteServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ChangeCheckCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ChangeCheckCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CheckCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CheckCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CommentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CommentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CourseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/CourseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/EventServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/EventServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FFolderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FFolderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FavoriteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FavoriteServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FolderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/FolderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/JsonParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/JsonParse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/MessageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/MessageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/NoteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/NoteServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/QuestionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/QuestionServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ReplyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/ReplyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/serviceImpl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/services/OperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/services/OperationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/test/JsoupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/test/JsoupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/C3P0Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/C3P0Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/JsonParse.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/JsonParse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/utils/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/addCourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/addCourse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/addNote.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/addNote.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/courseMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/courseMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/MyPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/c3p0-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/controlers/CourseUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/controlers/DistributionCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/controlers/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/dao/Dao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/AnswerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/CommentReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/CourseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/EventDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/FavoriteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/FfolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/FileDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/FolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/FollowDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/MessageReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/NotificationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/QuestionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/QuestionTagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/RecommendDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/ReferenceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/daoImpl/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/CommentReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Ffolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Folder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/MessageReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/QuestionTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/Recommend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/CommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/EventServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/FFolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/FolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/NoteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/QuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/ReplyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/serviceImpl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/services/OperationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/utils/C3P0Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/utils/JsonParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/classes/utils/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-collections-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-dbutils-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-lang-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/commons-logging-4.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/cos.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/dom4j-core-1.4-dev-8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/ezmorph-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/jaxen-1.1-beta-6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/json-lib-2.4-jdk15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/saxpath-1.0-FCS.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/addCourse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/c3p0-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/controlers/CourseUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/controlers/DistributionCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/controlers/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/courseMainPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/dao/Dao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/AnswerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/CommentReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/CourseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/EventDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/FavoriteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/FfolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/FileDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/FolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/FollowDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/MessageReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/NotificationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/QuestionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/QuestionTagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/RecommendDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/ReferenceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/daoImpl/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/CommentReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Ffolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Folder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/MessageReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/QuestionTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/Recommend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/js/json2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/MyPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/c3p0-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/controlers/CourseUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/controlers/DistributionCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/controlers/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/dao/Dao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/AnswerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/CommentReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/CourseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/EventDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/FavoriteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/FfolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/FileDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/FolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/FollowDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/MessageReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/NotificationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/QuestionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/QuestionTagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/RecommendDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/ReferenceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/daoImpl/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/CommentReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Ffolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Folder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/MessageReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/QuestionTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/Recommend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/CommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/EventServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/FFolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/FolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/NoteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/QuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/ReplyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/serviceImpl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/services/OperationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/utils/C3P0Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/utils/JsonParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/classes/utils/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-collections-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-dbutils-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-lang-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/commons-logging-4.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/cos.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/dom4j-core-1.4-dev-8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/ezmorph-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/jaxen-1.1-beta-6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/json-lib-2.4-jdk15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/saxpath-1.0-FCS.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/lib/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/addCourse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/c3p0-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/controlers/CourseUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/controlers/DistributionCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/controlers/SMS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/courseMainPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/dao/Dao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/AnswerDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/CommentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/CommentReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/CourseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/EventDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/FavoriteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/FfolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/FileDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/FolderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/FollowDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/MessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/MessageReplyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/NoteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/NotificationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/QuestionDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/QuestionTagDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/RecommendDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/ReferenceDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/daoImpl/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/CommentReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Ffolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Folder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/MessageReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Notification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/QuestionTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/Recommend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/js/json2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/CommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/EventServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/FFolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/FolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/NoteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/QuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/ReplyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/serviceImpl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/services/OperationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/utils/C3P0Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/utils/JsonParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/production/fileManagement/utils/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/CommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/CourseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/EventServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/FFolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/FolderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/NoteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/QuestionServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/ReplyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/serviceImpl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/services/OperationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/utils/C3P0Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/utils/JsonParse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/production/fileManagement/utils/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fileManagement.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/MyPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-330">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1890" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="courseMainPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/courseMainPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alterInformation.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/alterInformation.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="addNote.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/addNote.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-870">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addCourse.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/addCourse.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="733">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WebRoot/login.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/MyPage.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/courseMainPage.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/addNote.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/addCourse.jsp" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -32,8 +469,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="181" />
-    <option name="y" value="44" />
+    <option name="x" value="154" />
+    <option name="y" value="45" />
     <option name="width" value="1095" />
     <option name="height" value="660" />
   </component>
@@ -42,31 +479,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="fileManagement" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fileManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="studentFileManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentFileManagement" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="E:/tomcat9/apache-tomcat-9.0.12-windows-x64/apache-tomcat-9.0.12/webapps￥fileManagement" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
@@ -129,12 +566,12 @@
       <deployment>
         <artifact name="fileManagement:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/fileManagement" />
+            <option name="CONTEXT_PATH" value="/studentFileManagement" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_fileManagement_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_studentFileManagement" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -142,7 +579,7 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50204" />
+        <option name="DEBUG_PORT" value="57158" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -201,24 +638,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81b72c7a-5deb-4abe-8987-c70b3bdc12de" name="Default" comment="" />
-      <created>1541419600524</created>
+      <changelist id="82998137-5e18-45c1-9102-c3db390572fe" name="Default" comment="" />
+      <created>1542098197873</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541419600524</updated>
-      <workItem from="1541419611570" duration="1475000" />
+      <updated>1542098197873</updated>
+      <workItem from="1542098233431" duration="1327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1475000" />
+    <option name="totallyTimeSpent" value="1327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.3287879" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.26666668" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
@@ -229,15 +667,15 @@
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.3287879" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7287879" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19090909" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15300146" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -254,6 +692,69 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/MyPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/courseMainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/alterInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/addNote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-870">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/production/fileManagement/addCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/production/fileManagement/courseMainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/production/fileManagement/MyPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1710" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/addCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -308,7 +809,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>fileManagement</last-edited>
+          <last-edited>Web|fileManagement</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

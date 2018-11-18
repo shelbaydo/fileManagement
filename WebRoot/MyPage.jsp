@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-  <script src="<%=path%>/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+ <script src="<%=path%>/js/jquery-3.3.1.min.js" type="text/javascript"></script>
  <script type="text/javascript" src="<%=path%>/js/json2.js"></script>
     <base href="<%=basePath%>">
     
@@ -42,7 +42,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					$("div").css("color","red").css("cursor","pointer");
 					
  					$(".courseDiv").bind("click",function(){
- 						
  						window.location.href = 'http://localhost:8080/fileManagement/CourseUnit?courseName='+$(this).html();
  					});   
  				},
@@ -62,6 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    ${currentUser.username}
    <a href="<%= path%>/alterInformation.jsp">修改资料</a>
    <a href="<%=path %>/addCourse.jsp">添加课程</a> 
+ 
    <p>
    </p>
   </body>

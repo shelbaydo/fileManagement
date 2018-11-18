@@ -25,6 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	$(function(){
 		var courseName = $("#courseName").html();
 		var param = {"type":"findAllNote","courseName":courseName};
+		var param2 = {"type":"findAllFolder","courseName":courseName};
 		$.ajax(
  			{	
  				url:getBasePath()+"/ANoteServlet",
@@ -35,17 +36,47 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  				data:JSON.stringify(param),
  				success:function(msg){
  					var message = $.parseJSON(msg);//将json类型字符串转换为json对象		
+ 					
  				    for (var i=0;i<message.noteNum;i++)
-					{
-						$("p").append("<div class='noteDiv'>"+message.noteList[i]+"</div>"+"<br/>");
+					{	
+						
+						$("#courseName").append("<div class='noteDiv'>"+message.noteList[i]+"<span style='display:none'>"+message.noteIdList[i]+"</span>"+"</div>"+"<br/>");
 						
 					}	
 					$("div").css("color","red").css("cursor","pointer");
 					
  					$(".noteDiv").bind("click",function(){
- 						
- 						window.location.href = 'http://localhost:8080/fileManagement/CourseUnit?courseName='+$(this).html();
- 					});   
+ 						var id = $(this).children("span").eq(0).html();
+ 						window.location.href = 'http://localhost:8080/fileManagement/NoteUnit?noteId='+id;
+ 					});    
+ 				},
+ 				error:function(response,status){		
+					console.log(status);					
+ 				}				
+ 			})	
+ 			$.ajax(
+ 			{	
+ 				url:getBasePath()+"/AFolderServlet",
+ 				async:true,
+ 				cache:false,
+ 				type:"post",
+ 				contentType: "application/json; charset=utf-8",
+ 				data:JSON.stringify(param2),
+ 				success:function(msg){
+ 					var message = $.parseJSON(msg);//将json类型字符串转换为json对象		
+ 					
+ 				    for (var i=0;i<message.folderNum;i++)
+					{	
+						
+						$("#courseName").append("<div class='folderDiv'> 文件夹有：<br/>"+message.folderList[i]+"<span >"+message.folderIdList[i]+"</span>"+"</div>"+"<br/>");
+						
+					}	
+					$("div").css("color","red").css("cursor","pointer");
+					
+ 					$(".folderDiv").bind("click",function(){
+ 						var id = $(this).children("span").eq(0).html();
+ 						window.location.href = 'http://localhost:8080/fileManagement/FolderUnit?folderId='+id;
+ 					});    
  				},
  				error:function(response,status){		
 					console.log(status);					
@@ -62,5 +93,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
    <p id="courseName">${requestedCourse.name}</p>
    <a href = "<%=path %>/addNote.jsp?courseName=${requestedCourse.name}">增添笔记</a>
+   <a href="<%=path%>/addFolder.jsp?courseId=${requestedCourse.courseId}">新建文件夹</a>
   </body>
 </html>
