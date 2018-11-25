@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QuestionServlet</servlet-name>
+    <servlet-class>serviceImpl.QuestionServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+     <servlet-name>QuestionServlet</servlet-name>
+    <url-pattern>/QuestionServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FolderServlet</servlet-name>
+    <servlet-class>serviceImpl.FolderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FolderServlet</servlet-name>
+    <url-pattern>/FolderServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoteServlet</servlet-name>
+    <servlet-class>serviceImpl.NoteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>NoteServlet</servlet-name>
+    <url-pattern>/NoteServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseServlet</servlet-name>
+    <servlet-class>serviceImpl.CourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CourseServlet</servlet-name>
+    <url-pattern>/CourseServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FFolderServlet</servlet-name>
+    <servlet-class>serviceImpl.FFolderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FFolderServlet</servlet-name>
+    <url-pattern>/FFolderServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FavoriteServlet</servlet-name>
+    <servlet-class>serviceImpl.FavoriteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FavoriteServlet</servlet-name>
+    <url-pattern>/FavoriteServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>serviceImpl.CommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessageServlet</servlet-name>
+    <servlet-class>serviceImpl.MessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>MessageServlet</servlet-name>
+    <url-pattern>/MessageServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EventServlet</servlet-name>
+    <servlet-class>serviceImpl.EventServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>EventServlet</servlet-name>
+    <url-pattern>/EventServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReplyServlet</servlet-name>
+    <servlet-class>serviceImpl.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ReplyServlet</servlet-name>
+    <url-pattern>/ReplyServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DistributionCenter</servlet-name>
+    <servlet-class>controlers.DistributionCenter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DistributionCenter</servlet-name>
+    <url-pattern>/DistributionCenter</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>serviceImpl.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>serviceImpl.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SMS</servlet-name>
+    <servlet-class>controlers.SMS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>serviceImpl.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CourseUnit</servlet-name>
+    <servlet-class>controlers.CourseUnit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ANoteServlet</servlet-name>
+    <servlet-class>serviceImpl.ANoteServlet</servlet-class>
+  </servlet>
+ <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SMS</servlet-name>
+    <url-pattern>/SMS</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CourseUnit</servlet-name>
+    <url-pattern>/CourseUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ANoteServlet</servlet-name>
+    <url-pattern>/ANoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>serviceImpl.CheckCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/CheckCode</url-pattern>
+ </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeCheckCode</servlet-name>
+    <servlet-class>serviceImpl.ChangeCheckCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControlForAjax</servlet-name>
+    <servlet-class>controlers.ControlForAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoteUnit</servlet-name>
+    <servlet-class>controlers.NoteUnit</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>AFolderServlet</servlet-name>
+    <servlet-class>serviceImpl.AFolderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FolderUnit</servlet-name>
+    <servlet-class>controlers.FolderUnit</servlet-class>
+  </servlet>
+
+
+ <servlet>
+    <servlet-name>UpLoad</servlet-name>
+    <servlet-class>serviceImpl.UpLoad</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadProfile</servlet-name>
+    <servlet-class>serviceImpl.UploadProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileDownloadServlet</servlet-name>
+    <servlet-class>serviceImpl.FileDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>serviceImpl.DownloadServlet</servlet-class>
+  </servlet>
+
+
+
+<servlet-mapping>
+     <servlet-name>UpLoad</servlet-name>
+    <url-pattern>/UpLoad</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+     <servlet-name>ChangeCheckCode</servlet-name>
+    <url-pattern>/ChangeCheckCode</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ControlForAjax</servlet-name>
+    <url-pattern>/ControlForAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoteUnit</servlet-name>
+    <url-pattern>/NoteUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AFolderServlet</servlet-name>
+    <url-pattern>/AFolderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FolderUnit</servlet-name>
+    <url-pattern>/FolderUnit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadProfile</servlet-name>
+    <url-pattern>/UploadProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileDownloadServlet</servlet-name>
+    <url-pattern>/FileDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+ <filter>
+	<filter-name>showfilter</filter-name>
+	<filter-class>filters.LoginFilter</filter-class>
+</filter>
+<filter-mapping>
+		<filter-name>showfilter</filter-name>
+		<url-pattern>/addCourse.jsp</url-pattern>
+</filter-mapping>
+<filter-mapping>
+		<filter-name>showfilter</filter-name>
+		<url-pattern>/addNote.jsp</url-pattern>
+</filter-mapping>
+<filter-mapping>
+		<filter-name>showfilter</filter-name>
+		<url-pattern>/alterInformation.jsp</url-pattern>
+</filter-mapping>
+<filter-mapping>
+		<filter-name>showfilter</filter-name>
+		<url-pattern>/courseMainPage.jsp</url-pattern>
+</filter-mapping>
+<filter-mapping>
+		<filter-name>showfilter</filter-name>
+		<url-pattern>/MyPage.jsp</url-pattern>
+</filter-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
