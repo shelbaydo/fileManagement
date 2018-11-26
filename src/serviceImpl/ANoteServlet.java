@@ -14,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import utils.JsonParse;
+import daoImpl.CourseDao;
 import daoImpl.NoteDao;
 import entity.Course;
 import entity.Note;
@@ -54,11 +55,13 @@ public class ANoteServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		HttpSession session = request.getSession(true);
 		User user = (User)session.getAttribute("currentUser");
+		int userId = user.getUserId();
 		Map<String,String> returnJson = new HashMap();
 		JSONObject o = JSONObject.fromObject(returnJson);
 		JSONObject parameters = JsonParse.getParameters(request);
 		String type = (String)parameters.get("type");
 		Course course = null;
+		CourseDao courseDao = new CourseDao();
 		int courseId = 0;
 		JSONArray jsonArray = new JSONArray();	
 		JSONArray noteIdArray = new JSONArray();
@@ -82,8 +85,16 @@ public class ANoteServlet extends HttpServlet {
 			 o.put("noteList", jsonArray);
 			 o.put("noteIdList", noteIdArray);
 		}
+		if(type.equals("findNote")){
+			String courseName = (String)parameters.get("courseName");
+			String noteTitle = (String)parameters.get("noteTitle");
+			course = courseDao.findCourseByIdAndName(courseName, userId);
+			courseId = course.getCourseId();
+			Note note = noteDao.findNoteByTitleAId(noteTitle,courseId);
+			o.put("content", note.getContent());
+		}
 		if(type.equals("find4LatestNote")){
-			int userId = user.getUserId();
+			userId = user.getUserId();
 		    noteList = this.find4LatestNotes(userId);
 		    for(int i = 0;i<noteList.size();i++){
 			    jsonArray.add(noteList.get(i).getTitle());
@@ -100,7 +111,7 @@ public class ANoteServlet extends HttpServlet {
 		}	
 		if(type.equals("limitedSearchForNotes")){
 			Page<Note> pageNote = null;
-			int userId = user.getUserId();
+			userId = user.getUserId();
 			int isPublic = parameters.getInt("isPublic");
 			String courseScope = parameters.getString("courseScope");
 			String noteTitle = parameters.getString("noteTitle");
@@ -153,7 +164,7 @@ public class ANoteServlet extends HttpServlet {
 		    o.put("pageTotal",pageNote.getTotalPage());
 		}	
 		if(type.equals("findNotesInPage")){
-			int userId = user.getUserId();
+			userId = user.getUserId();
 			int pageNum = parameters.getInt("pageNum");
 			int pageSize = parameters.getInt("pageSize"); 
 			Page<Note> pageNote = this.findPageObject(pageNum, pageSize, userId);

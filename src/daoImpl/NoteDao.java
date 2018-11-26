@@ -349,4 +349,16 @@ private int getTotalNumByVisibility(int userId, boolean isPublic) {
 		}
 		return  Integer.parseInt( obj.toString() );
 	}
+
+	public Note findNoteByTitleAId(String noteTitle, int courseId) {
+		String sql = "select * from note where title = ? and courseId = ?";
+		List<Note> noteList = null;
+		try {
+			noteList = qr.query(sql, new BeanListHandler<Note>(Note.class),noteTitle,courseId);			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return noteList.get(0);
+	}
 }

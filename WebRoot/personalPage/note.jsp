@@ -5,7 +5,6 @@
 	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	int pageNum = 1;
 	int pageSize = 3;
-	
 %>
 <!DOCTYPE html>
 <html>
@@ -57,7 +56,7 @@ function onPageChange(event) {
 	$.ajax(
 		{	
 			url:getBasePath()+"/ANoteServlet",
-			async:true,
+			async:false,
 			cache:false,
 			type:"post",
 			contentType:"application/json; charset=utf-8",
@@ -108,7 +107,16 @@ function onPageChange(event) {
 				console.log(status);					
 			}				
 		});
-	}
+		$(".note-title").bind("click",function(){
+		var noteTitle = $(this).children("span").eq(1).html();
+		var courseName = $(this).next("div").eq(0).children("span").eq(1).html();
+		 
+		var url = getBasePath()+"personalPage/modify-note.jsp?noteTitle="+noteTitle+"&&courseName="+courseName;
+		 
+		window.location.href=url;
+		
+	})
+}
 	$(function(){	
 		var pageNum = $("#pageNum").html();
 		var param1 = {"type":"findAllCourse"};
@@ -133,7 +141,6 @@ function onPageChange(event) {
 					{
 						$("#theForm").children("select").eq(1).append("<option value="+message.courseList[i]+">"+message.courseList[i]+"</option>");
 					}	
- 				     
  				},
  				error:function(response,status){		
 					console.log(status);					
@@ -142,7 +149,7 @@ function onPageChange(event) {
 		$.ajax(
  			{	
  				url:getBasePath()+"/ANoteServlet",
- 				async:true,
+ 				async:false,
  				cache:false,
  				type:"post",
  				contentType:"application/json; charset=utf-8",
@@ -163,7 +170,7 @@ function onPageChange(event) {
 						for(i=0;i<message.noteNum;i++)
 						{	
 							$("#noteUl").children("li").eq(i).css("display","block");
-							$("#noteUl").children("li").eq(i).find("a").html(message.noteList[i]);
+							$("#noteUl").children("li").eq(i).find("a").children("span").eq(1).html(message.noteList[i]);
 							$("#noteUl").children("li").eq(i).children("div").eq(0).children("span").eq(1).html(message.courseNameOfNoteList[i]);
 							$("#noteUl").children("li").eq(i).children("div").eq(1).html(message.createTimeOfNoteList[i]);  								
 						}					
@@ -194,8 +201,18 @@ function onPageChange(event) {
 					console.log(status);					
  				}				
  			});
- 			 
+ 		$(".note-title").bind("click",function(){
+		 
+		var noteTitle = $(this).children("span").eq(1).html();
+		var courseName = $(this).next("div").eq(0).children("span").eq(1).html();
+		 
+		var url = getBasePath()+"personalPage/modify-note.jsp?noteTitle="+noteTitle+"&&courseName="+courseName;
+		 
+		window.location.href=url;
+		
 	})
+ 			 
+})
 	function getBasePath(){
 	    return '<%=basePath%>';
     }
@@ -228,22 +245,22 @@ function onPageChange(event) {
 					</form>
 					<ul class="rounded" id="noteUl">
 						<li class="clearfix">
-							<a class="note-title" href="../home/infoNote.jsp"><span class="fa fa-exclamation-circle note-icon-seen"></span>c语言的语言特点</a>
+							<a class="note-title"  ><span class="fa fa-exclamation-circle note-icon-seen"></span><span>c语言的语言特点</span></a>
 							<div class="note-mark clearfix"><span class="fa fa-mortar-board note-icon"></span><span class="note-mark-list">C语言</span></div>
 							<div class="note-time">#发表于1天前</div>
 						</li>
 						<li class="clearfix">
-							<a class="note-title" href="../home/infoNote.jsp"><span class="fa fa-ban note-icon-ban"></span>c语言的语言特点</a>
+							<a class="note-title"  ><span class="fa fa-ban note-icon-ban"></span><span>c语言的语言特点</span></a>
 							<div class="note-mark clearfix"><span class="fa fa-mortar-board note-icon"></span><span class="note-mark-list">C语言</span></div>
 							<div class="note-time">#发表于2天前</div>
 						</li>
 						<li class="clearfix">
-							<a class="note-title" href="../home/infoNote.jsp"><span class="fa fa-exclamation-circle note-icon-seen"></span>java语言的语言特点</a>
+							<a class="note-title"  ><span class="fa fa-exclamation-circle note-icon-seen"></span><span>java语言的语言特点</span></a>
 							<div class="note-mark clearfix"><span class="fa fa-mortar-board note-icon"></span><span class="note-mark-list">JAVA语言</span></div>
 							<div class="note-time">#发表于3天前</div>
 						</li>
 						<li class="clearfix">
-							<a class="note-title" href="../home/infoNote.jsp"><span class="fa fa-ban note-icon-ban"></span>java语言的语言特点</a>
+							<a class="note-title"  ><span class="fa fa-ban note-icon-ban"></span><span>java语言的语言特点</span></a>
 							<div class="note-mark clearfix"><span class="fa fa-mortar-board note-icon"></span><span class="note-mark-list">JAVA语言</span></div>
 							<div class="note-time">#发表于4天前</div>
 						</li>
