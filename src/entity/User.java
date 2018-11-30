@@ -36,6 +36,13 @@ public class User {
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
+	private String photo;
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 	private String username;
 	private String major;
 	private String phone;

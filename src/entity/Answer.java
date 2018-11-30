@@ -28,14 +28,29 @@ public class Answer {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public Date getAnswerTime() {
+	public String getAnswerTime() {
 		return answerTime;
 	}
-	public void setAnswerTime(Date answerTime) {
+	public void setAnswerTime(String answerTime) {
 		this.answerTime = answerTime;
+	}
+	
+	public Boolean getIsAskerBrowse() {
+		return isAskerBrowse;
+	}
+	public void setIsAskerBrowse(Boolean isAskerBrowse) {
+		this.isAskerBrowse = isAskerBrowse;
+	}
+	Boolean isAskerBrowse;
+	Boolean isBestAnswer;
+	public Boolean getIsBestAnswer() {
+		return isBestAnswer;
+	}
+	public void setIsBestAnswer(Boolean isBestAnswer) {
+		this.isBestAnswer = isBestAnswer;
 	}
 	private int answerManId;
 	private int questionId;
 	private String content;
-	private Date answerTime;
+	private String answerTime;
 }

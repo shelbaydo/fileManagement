@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import utils.C3P0Utils;
@@ -40,6 +41,17 @@ public class UserDao implements Dao {
 		}else{
 			return false;
 		}
+	}
+	//根据用户Id查找该用户具体信息
+	public User findUserById(int id){
+		User user = new User();
+		String sql = "select * from user where userId=?";
+		try{
+			user = qr.query(sql,new BeanHandler<User>(User.class),id);
+		}catch(SQLException e){
+			e.printStackTrace();
+		}
+		return user;
 	}
 	
 	public Boolean deleteObjectById(int id) {

@@ -10,14 +10,22 @@ public class Question {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	private int tagId;
-	public int getTagId() {
-		return tagId;
+	private String tagContent;
+	
+	public String getTagContent() {
+		return tagContent;
 	}
-	public void setTagId(int tagId) {
-		this.tagId = tagId;
+	public void setTagContent(String tagContent) {
+		this.tagContent = tagContent;
 	}
 	private int QuestionId;
+	private int browseNum;
+	public int getBrowseNum() {
+		return browseNum;
+	}
+	public void setBrowseNum(int browseNum) {
+		this.browseNum = browseNum;
+	}
 	public int getQuestionId() {
 		return QuestionId;
 	}
@@ -25,7 +33,7 @@ public class Question {
 		QuestionId = questionId;
 	}
 	private String content;
-	private Date createTime;
+	private String createTime;
 	private int askerId;
 	public String getContent() {
 		return content;
@@ -33,10 +41,10 @@ public class Question {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public Date getCreateTime() {
+	public String getCreateTime() {
 		return createTime;
 	}
-	public void setCreateTime(Date createTime) {
+	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
 	public int getAskerId() {

@@ -2,6 +2,13 @@ package entity;
 
 public class QuestionTag {
 	private int QuestionTagId;
+	private int QuestionId;
+	public int getQuestionId() {
+		return QuestionId;
+	}
+	public void setQuestionId(int questionId) {
+		QuestionId = questionId;
+	}
 	public int getQuestionTagId() {
 		return QuestionTagId;
 	}
@@ -9,18 +16,13 @@ public class QuestionTag {
 		QuestionTagId = questionTagId;
 	}
 	private String name;
-	private int refNum;
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getRefNum() {
-		return refNum;
-	}
-	public void setRefNum(int refNum) {
-		this.refNum = refNum;
-	}
+	
 	
 }

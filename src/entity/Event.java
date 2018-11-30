@@ -11,33 +11,29 @@ public class Event {
 		EventId = eventId;
 	}
 	private int userId;
-	private String name;
-	private Date createTime;
-	private Date endTime;
+	
+	private String createTime;
+	private String endTime;
 	private boolean isExpired;
 	private String content;
+	
 	public int getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public Date getCreateTime() {
+	
+	public String getCreateTime() {
 		return createTime;
 	}
-	public void setCreateTime(Date createTime) {
+	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
-	public Date getEndTime() {
+	public String getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(Date endTime) {
+	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 	public boolean isExpired() {
